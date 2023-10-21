@@ -80,6 +80,7 @@ app.use(ctx => {
             created: ctx.request.body.created,
           }
         );
+        ctx.response.body = {id: id};
         ctx.response.status = 201;
       }
       return;
